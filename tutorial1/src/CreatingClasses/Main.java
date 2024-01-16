@@ -27,5 +27,18 @@ public class Main {
 
         bob.speak();
         joe.speak();
+
+        Dog sean = new Dog("Sean",3);
+        Dog youie = new Dog("Youie",3);
+        System.out.print("Dog count is ");
+
+        // The reason I'm getting 8 is because, here, Cat inherits Dog, so it's being counted - I guess
+        System.out.println(Dog.count);
+        // We can change the count
+        Dog.count = 5;
+
+        System.out.print("Real Dog count is ");
+        System.out.println(Dog.count);
+
     }
 }
