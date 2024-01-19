@@ -26,6 +26,10 @@ public class Main {
 
         // Hash Table-esque Implementation
         Level lvl = Level.LOW;
+        // System.out.println(Level.valueOf("LOW"));
+
+        // Same answer
+        lvl.setLvl(5);
         System.out.println(lvl.getLvl());
     }
 }
